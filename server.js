@@ -11,7 +11,7 @@ var morgan       = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser   = require('body-parser');
 var session      = require('express-session');
-var configDB 	 = require('./config/database.js');
+var configDB 	 = require('./app/config/database.js');
 
 //$k#Hsr9Zi6649i77qr]f!Q0b
 var app = express();
@@ -37,12 +37,10 @@ app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
 app.use(flash()); // use connect-flash for flash messages stored in session
 
-// routes
-//========
-require('./app/routes.js')(app,passport);
+
 
 
 //launch
 //======
 app.listen(port);
-console.log('Port ' + port + 'is live');
+console.log('Port ' + port + ' is live');
