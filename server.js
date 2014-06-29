@@ -29,6 +29,8 @@ app.use(bodyParser()); // get information from html forms
 
 app.set('view engine', 'ejs'); //set up ejs for templating
 
+require('./app/routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
+
 
 // passport-config
 //================
