@@ -5,6 +5,9 @@ body {
   display: flex;
   flex-flow: row wrap; }
 
+.nav li {
+  display: inline-block; }
+
 .menu {
   background-color: #262932;
   border: 1px solid #262932;
@@ -65,3 +68,19 @@ body {
 .float:hover, .float:focus, .float:active {
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px); }
+
+.img30 {
+  background-image: url('../images/Asics styll.jpg');
+  background-size: 100% 100%;
+  width: 100%;
+  height: 90%; }
+
+.snks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  opacity: 0; }
+
+.img30:hover .snks {
+  opacity: 0.6; }
