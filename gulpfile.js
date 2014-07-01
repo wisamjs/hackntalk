@@ -4,7 +4,7 @@ var plumber = require('gulp-plumber');
 var livereload = require('gulp-livereload');
 
 gulp.task('sass', function() {
-  gulp.src('styles/main.scss')
+  gulp.src('styles/*.scss')
     .pipe(plumber())
     .pipe(sass())
     .pipe(gulp.dest('styles'))
