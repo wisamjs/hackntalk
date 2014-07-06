@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles/.css/main.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+</head>
+<body>
+	<h1>Welcome</h1>
+
+	<!--Directive that
+	includes rendered template
+	of current orute -->
+	<div ng-view></div>
+
+
+	<!-- Angular and other resources -->
+	<script src="vendor/angular.js"></script>
+	<script src="vendor/angular-strap.js"></script>
+	<script src="vendor/angular-strap.tpl.js"></script>
+	<script src="vendor/angular-messages.js"></script>
+	<script src="vendor/angular-resource.js"></script>
+	<script src="vendor/angular-route.js"></script>
+	<script src="vendor/angular-cookies.js"></script>
+	<script src="vendor/moment.js"></script>
+	<script src="app.js"></script>
+
+		<!-- controllers -->
+	<script src="controllers/main.js"></script>
+</body>
+</html>
