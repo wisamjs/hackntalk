@@ -1,70 +1,86 @@
-/* border-box*/
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-/* Floating fix*/
-.clearfix:after {
-  content: " ";
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both; }
-
 body {
-  margin: 0 auto;
-  padding: 0px auto;
-  font-family: 'Open Sans', sans-serif; }
+  padding-top: 0px; }
 
-h1 {
-  font-weight: 800;
-  font-size: 50px; }
+.items {
+  display: flex;
+  flex-flow: row wrap; }
 
-h2 {
-  font-size: 24px;
-  font-weight: 300; }
+.nav li {
+  display: inline-block; }
 
-header {
-  background: url('../images/Nike Liberty.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 850px;
-  padding-top: 1px; }
+.menu {
+  background-color: #262932;
+  border: 1px solid #262932;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
 
-.data {
-  background: rgba(255, 255, 255, 0.6);
-  margin: 225px 30% 0% 30%;
-  padding: 5%;
-  text-align: center; }
+.menu-items {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #857676;
+  padding: 5px; }
 
-button {
-  border: none;
-  padding: 15px 65px 15px 65px; }
-
-.style1 {
-  background: rgba(247, 165, 65, 0.8); }
-
-.style2 {
-  background: rgba(13, 79, 139, 0.8); }
-
-a {
-  outline: none;
+.menu-items a {
+  margin-top: 7px;
+  margin-left: 5px;
+  margin-right: 5px;
   text-decoration: none;
-  color: inherit; }
+  font-style: sans serif;
+  font-weight: bold;
+  font-size: 26px;
+  color: white; }
 
-.shadow {
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.2);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.2); }
+.footer-items {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
 
-ul {
-  list-style: none;
-  margin: 0 auto;
-  padding: 0 auto; }
+.btn {
+  margin: 7px; }
 
-li {
+.meat {
+  padding: 4%; }
+
+#float {
   display: inline-block;
-  padding: 1% 2% 1% 2%;
-  font-size: 16px; }
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+
+#float:hover, #float:focus, #float:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px); }
+
+.float {
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+
+.float:hover, .float:focus, .float:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px); }
+
+.img30 {
+  background-image: url('../images/Asics styll.jpg');
+  background-size: 100% 100%;
+  width: 100%;
+  height: 90%; }
+
+.snks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  opacity: 0; }
+
+.img30:hover .snks {
+  opacity: 0.6; }

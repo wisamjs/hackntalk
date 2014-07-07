@@ -29,6 +29,10 @@ angular.module('MyApp', ['ngCookies', 'ngResource', 'ngMessages', 'ngRoute', 'mg
 		    templateUrl: 'views/signup.html',
 		    controller: 'SignupCtrl'
 		  })
+		.when('/newsfeed', {
+		    templateUrl: 'views/newsfeed.html',
+		    controller: 'NewsfeedCtrl'
+		  })
 		.otherwise({
 		    redirectTo: '/'
 		  });
