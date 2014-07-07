@@ -4,10 +4,10 @@ var plumber = require('gulp-plumber');
 var livereload = require('gulp-livereload');
 
 gulp.task('sass', function() {
-  gulp.src('public/styles/*.scss')
+  gulp.src('public/styles/main.scss')
     .pipe(plumber())
     .pipe(sass())
-    .pipe(gulp.dest('public/styles/.css'))
+    .pipe(gulp.dest('public/styles/css'))
     .pipe(livereload());
 });
 

@@ -21,6 +21,14 @@ angular.module('MyApp', ['ngCookies', 'ngResource', 'ngMessages', 'ngRoute', 'mg
 		    templateUrl: 'views/home.html',
 		    controller: 'MainCtrl'
 		  })
+	  		.when('/merchants', {
+		    templateUrl: 'views/merchants.html',
+		    controller: 'MerchantCtrl'
+		  })
+		.when('/help', {
+		    templateUrl: 'views/help.html',
+		    controller: 'HelpCtrl'
+		  })
 		.when('/login', {
 		    templateUrl: 'views/login.html',
 		    controller: 'LoginCtrl'
