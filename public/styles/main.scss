@@ -3,15 +3,10 @@
 body {
   padding-top: 0px;
 }
+
 .items{
 	display:flex;
 	flex-flow:row wrap;
-}
-
-.menu{
-	background-color:#FFFFF0;
-	border:1px solid #262932;
-	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 .menu-items{
 	display:flex;
@@ -32,7 +27,7 @@ body {
 	opacity:0.8;
 	font-family:Arial;
 }
-.header-icons span a{
+.header-icons li a{
 	display:flex;
 	flex-flow:column;
 	margin:2px;
@@ -42,6 +37,7 @@ body {
 	opacity: .75;
 	padding: 0 10px;
 }
+
 .header-icons span a:hover, .header-icons span a:focus{
 	border-bottom: 3px solid black;
 	transition-duration: 0.3s;
@@ -51,9 +47,7 @@ body {
 	justify-content:space-around;
 	width:50%;
 }
-.search{
-	
-}
+
 .footer-items{
 	display:flex;
 	width:100%;
@@ -93,19 +87,10 @@ body {
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
 }
-.img30{
-	background-image:url('../images/Asics styll.jpg');
-	background-size: 100% 100%;
-	width:100%;
-	height:90%;
-}
 .snks{
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	height:100%;
 	opacity:0;
-}
-.img30:hover .snks{
-	opacity:0.6;
 }

@@ -1,0 +1,1 @@
+var sneakerdeckServices = angular.module('Shoe',['ngResource'])

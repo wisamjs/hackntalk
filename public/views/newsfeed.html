@@ -1,8 +1,6 @@
-
+<!--
     <div class="menu-items" role="navigation">
 				
-				<a href="#" class="logo">SNEAKERDECK</a>
-
 				<div class="header-icons">
 					<span class="kof"><a href="#"> <img src="images/kicksOnFire.png" width="21px">KickOnFire</a></span>
 					<span class="merchant"><a href="#"><img src="images/merchant.png" alt="" width="20px">Merchant</a></span>
@@ -15,81 +13,12 @@
 				
 				
 	</div>
-	
+-->
     <div class="container meat">
-		<div class="items">
+		<div class="shoes" ng-repeat="shoe in shoes | orderBy:orderProp">
 			<div class="col-xs-6 col-md-4">
-				<a href="#" class="thumbnail" id="float">
-				<img id="img" src="images/Midnight 5s.jpg" alt="..." width="100%">
-				</a>
-			</div>
-			
-			<div class="col-xs-6 col-md-4">
-				<a href="#" class="thumbnail float">
-				<img id="img1" src="images/Diamond baby blue.jpg" width="100%" alt="...">
-				</a>
-			</div>
-			
-			<div class="col-xs-6 col-md-4">
-				<a href="#" class="thumbnail float">
-				<img id="img2" src="images/In da water.jpg" width="100%" alt="...">
-				</a>
-			</div>
-			
-			<div class="col-xs-6 col-md-4">
-				<a href="#" class="thumbnail float">
-				<img id="img3" src="images/Asics styll.jpg" width="100%" alt="...">
-				</a>
-			</div>
-		
-					<div class="col-xs-6 col-md-4">
-				<a href="#" class="thumbnail float">
-				<img id="img" src="images/Midnight 5s.jpg" alt="..." width="100%">
-				</a>
-			</div>
-			
-			<div class="col-xs-6 col-md-4">
-				<a href="#" class="thumbnail float">
-				<img id="img1" src="images/Diamond baby blue.jpg" width="100%" alt="...">
-				</a>
-			</div>
-			
-			<div class="col-xs-6 col-md-4">
-				<a href="#" class="thumbnail float">
-				<img id="img2" src="images/In da water.jpg" width="100%" alt="...">
-				</a>
-			</div>
-			
-			<div class="col-xs-6 col-md-4">
-				<a href="#" class="thumbnail float">
-				<img id="img3" src="images/Asics styll.jpg" width="100%" alt="...">
-				</a>
-			</div>
-				
-			<div class="col-xs-6 col-md-4">
-				<a href="#" class="thumbnail float">
-				<img id="img" src="images/Midnight 5s.jpg" alt="..." width="100%">
-				</a>
-			</div>
-			
-			<div class="col-xs-6 col-md-4">
-				<a href="#" class="thumbnail float">
-				<img id="img1" src="images/Diamond baby blue.jpg" width="100%" alt="...">
-				</a>
-			</div>
-			
-			<div class="col-xs-6 col-md-4">
-				<a href="#" class="thumbnail float">
-				<img id="img2" src="images/In da water.jpg" width="100%" alt="...">
-				</a>
-			</div>
-			
-			<div class="col-xs-6 col-md-4">
-				<div class="img30 thumbnail float">
-					<div class="snks">
-						<button type="button" class="btn btn-default">Deck</button>
-					</div>
-				</div>
+				<a href="#/{{shoe.id}}" class="thumbnail" id="float">
+				<img id="{{shoe.id}}" ng-src="{{shoe.imageUrl}}" alt="..." >
 				</a>
 			</div>
 		</div>

@@ -6,6 +6,19 @@
 	<link rel="stylesheet" href="styles/css/main.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<style>
+		.header-icons li a{
+			display:flex;
+			flex-flow:column;
+			margin:2px;
+			align-items:center;
+			text-decoration: none;
+			color:black;
+			opacity: .75;
+			padding: 0 10px;
+		}
+		
+	</style>
 </head>
 <body>
 
@@ -13,12 +26,16 @@
 		<div class="navbar-header">
 			<a class="navbar-brand" href="/">SneakerDeck</a>
 		</div>
-		<ul class="nav navbar-nav">
-			<li data-match-route="/$"><a href="/newsfeed">Shop</a></li>
-	    	<li data-match-route="/merchants"><a href="/merchants">Merchants</a></li>
-	    	<li data-match-route="/help"><a href="/help">Help</a></li>
+		<ul class="nav navbar-nav header-icons">
+			<li data-match-route="/$"><a href="/newsfeed"><img src="images/shop.png" alt="" width="20px">Shop</a></li>
+	    	<li data-match-route="/merchants"><a href="/merchants"><img src="images/merchant.png" alt="" width="20px" alt="">Merchants</a></li>
+	    	<li data-match-route="/help"><a href="/help"><img src="images/help.png" alt="" width="20px">Help</a></li>
+	    	<li><a href="/post"><img src="images/post.png" alt="" width="20px">Post</a></li>
+	    	<li><a href="/notifications"><img src="images/notifications.png" alt="" width="20px">Notification</a></li>
+	    	<li><a href="/you"><img src="images/you.png" alt="" width="20px">You</a></li>
 	    </ul>
 	    <ul class="nav navbar-nav pull-right" ng-if="!currentUser">
+	    	<li><input type="text" placeholder="search" class="searchbox" /></li>
 	    	<li data-match-route="/login"><a href="/login">Login</a></li>
 	    	<li data-match-route="/signup"><a href="/signup">Sign up</a></li>
 	  	</ul>
